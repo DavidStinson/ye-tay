@@ -1,3 +1,11 @@
+function getRandomKanyeQuote() {
+  return kanyeQuotes[Math.floor(Math.random() * (kanyeQuotes.length - 1))]
+}
+
+function getRandomTaylorQuote() {
+  return taylorQuotes[Math.floor(Math.random() * (taylorQuotes.length - 1))]
+}
+
 const kanyeQuotes = [
   "2024",
   "All you have to be is yourself",
@@ -82,11 +90,11 @@ const kanyeQuotes = [
   "We are here to complete the revolution. We are building the future",
   "We as a people will heal. We will insure the well being of each other",
   "We have to evolve",
-  "We must and will cure homelessness and hunger. We have the capability as a species",
-  "We must form a union. We must unify",
-  "We will be recognized",
-  "We will change the paradigm",
-  "We will cure hunger",
+  "We must and will cure homelessness and hunger. We have the capability as a species.",
+  "We must form a union. We must unify.",
+  "We will be recognized.",
+  "We will change the paradigm.",
+  "We will cure hunger.",
   "We will heal. We will cure.",
   "We're going to move the entire music industry into the 21st Century",
   "We've gotten comfortable with not having what we deserve",
@@ -137,3 +145,8 @@ const taylorQuotes = [
   "Some speak of an Armageddon; A time when humans will build machines they neither understand nor control. To myself I whisper, 'we already have'.",
   "Only the dead have seen the end of cyberwar."
 ]
+
+export {
+  getRandomKanyeQuote,
+  getRandomTaylorQuote
+}
